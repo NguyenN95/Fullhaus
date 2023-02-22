@@ -21,23 +21,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/NguyenN95/Fullhaus">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Project Name</h3>
+<h3 align="center">Aptitude Test</h3>
 
   <p align="center">
     Project Description
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NguyenN95/Fullhaus"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/NguyenN95/Fullhaus">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/NguyenN95/Fullhaus/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/NguyenN95/Fullhaus/issues">Request Feature</a>
   </p>
 </div>
 
@@ -51,7 +51,6 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <!-- <li><a href="#dependencies">Dependencies</a></li> -->
       </ul>
     </li>
     <li>
@@ -76,8 +75,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -112,7 +109,7 @@ Download [python 3.x or greater][Python-url]
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/NguyenN95/Fullhaus.git
    ```
 2. Create virtual environment
    * Linux 
@@ -172,12 +169,13 @@ command to run if program contains helper info
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Build a classification model (Tensorflow)
+- [ ] Build an API to access the model (Fastapi)
+- [ ] Create a Docker image of your code by following docker best practices
+- [ ] Implement CI/CD pipeline on Github Actions
+- [ ] Add a clear README file with instructions.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/NguyenN95/Fullhaus/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,9 +183,6 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 <!-- Version history -->
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
@@ -227,7 +222,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Nguyen - [@Nguyen Linkedin](https://www.linkedin.com/in/binhnguyennguyen/)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/NguyenN95/Fullhaus](https://github.com/NguyenN95/Fullhaus)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,19 +245,19 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- https://javascript.plainenglish.io/how-to-make-custom-language-badges-for-your-profile-using-shields-io-d2aeaf016b6b -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[contributors-url]: https://github.com/NguyenN95/Fullhaus/graphs/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
+[forks-url]: https://github.com/NguyenN95/Fullhaus/network/members
 
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
+[stars-url]: https://github.com/NguyenN95/Fullhaus/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
+[issues-url]: https://github.com/NguyenN95/Fullhaus/issues
 
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[license-url]: https://github.com/NguyenN95/Fullhaus/blob/master/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
