@@ -1,2 +1,8 @@
-if __name__ == "__main__":
-    print("Hello World")
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
