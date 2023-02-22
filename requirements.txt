@@ -1,2 +1,6 @@
 fastapi
 uvicorn[standard]
+python-multipart
+tensorflow
+tensorflow_hub
+numpy
