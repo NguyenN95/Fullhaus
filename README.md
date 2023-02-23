@@ -9,12 +9,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -25,12 +25,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Aptitude Test</h3>
+<h3 align="center">Fullhaus Test</h3>
 
   <p align="center">
-    Project Description
+    Fullhaus test
     <br />
-    <a href="https://github.com/NguyenN95/Fullhaus"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NguyenN95/Fullhaus#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/NguyenN95/Fullhaus">View Demo</a>
@@ -62,7 +62,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#help">Help</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#checklist">Checklist</a></li>
     <li><a href="#version-history">Version history</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -76,7 +76,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Build a classification model classify (an) image(s) into 3 categories (Bed, Sofa, Chair), apply that to an API server (Fastapi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,16 +85,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![Python][Python]][Python-url]
+* [![Docker][Docker]][Docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ### Dependencies
-
-* Your Dependencies here
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -103,7 +96,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Prerequisites
 
-Download [python 3.x or greater][Python-url]
+Download [python 3.10 or greater][Python-url]
+
+Download [Docker][Docker-url] (**Optional**)
 
 ### Installation
 
@@ -111,25 +106,25 @@ Download [python 3.x or greater][Python-url]
    ```bash
    git clone https://github.com/NguyenN95/Fullhaus.git
    ```
-2. Create virtual environment
+2. Create virtual environment (**None Docker version**)
    * Linux 
       ```bash
-      python3 -m venv 'your_virtual_enviroment_name'
+      python3 -m venv env
       ```
    * Windows 
       ```powershell
-      python -m venv 'your_virtual_enviroment_name'
+      python -m venv env
       ```
-3. Activate virtual environment
+3. Activate virtual environment (**None Docker version**)
    * Linux 
       ```bash
-      source ./your_virtual_enviroment_name/Scripts/activate
+      source ./env/Scripts/activate
       ```
    * Windows 
       ```powershell
-      .\your_virtual_enviroment_name\Scripts\activate.ps1
+      .\env\Scripts\activate.ps1
       ```
-4. Install libraries
+4. Install libraries (**None Docker version**)
    * Linux 
       ```bash
       pip3 install -r requirements.txt
@@ -146,9 +141,31 @@ Download [python 3.x or greater][Python-url]
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Local Server
+   * Deploy local server
+      * Docker environment
+      ```bash
+      docker-compose up -d
+      ```
+      * Host environment
+      ```bash
+      cd ./src
+      uvicorn main:app --reload
+      ```
+   * Open web browser and type http://localhost:8000/docs to open Swagger UI 
+   * Upload an image via `/predicts-image`
+2. Test
+   * Before running test make sure these dependencies installed
+   ```bash
+   pip install pytest httpx
+   ```
+   * Run
+   ```bash
+   cd ./src
+   pytest
+   ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Docker docs](https://docs.docker.com/), [Tensorflow docs](https://www.tensorflow.org/api_docs/python/tf), [Fastapi](https://fastapi.tiangolo.com/), [Github actions](https://docs.github.com/en/actions)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,22 +175,33 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Help
 
 Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+* Docker
+  ```bash
+  docker --help
+  ```
+
+* Python
+  ```bash
+  python --help
+  ```
+
+* Pip
+  ```bash
+  pip --help
+  ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Checklist
 
-- [x] Build a classification model (Tensorflow)
-- [ ] Build an API to access the model (Fastapi)
-- [ ] Create a Docker image of your code by following docker best practices
-- [ ] Implement CI/CD pipeline on Github Actions
-- [ ] Add a clear README file with instructions.
+- [x] Build a classification model
+- [x] Build an API to access the model
+- [x] Create a Docker image of your code by following docker best practices
+- [x] Implement CI/CD pipeline on Github Actions
+- [x] Add a clear README file with instructions.
 
 See the [open issues](https://github.com/NguyenN95/Fullhaus/issues) for a full list of proposed features (and known issues).
 
@@ -244,25 +272,26 @@ Project Link: [https://github.com/NguyenN95/Fullhaus](https://github.com/NguyenN
 <!-- https://github.com/Ileriayo/markdown-badges -->
 <!-- https://javascript.plainenglish.io/how-to-make-custom-language-badges-for-your-profile-using-shields-io-d2aeaf016b6b -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/NguyenN95/Fullhaus.svg?style=for-the-badge
 [contributors-url]: https://github.com/NguyenN95/Fullhaus/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/NguyenN95/Fullhaus.svg?style=for-the-badge
 [forks-url]: https://github.com/NguyenN95/Fullhaus/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/NguyenN95/Fullhaus.svg?style=for-the-badge
 [stars-url]: https://github.com/NguyenN95/Fullhaus/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/NguyenN95/Fullhaus.svg?style=for-the-badge
 [issues-url]: https://github.com/NguyenN95/Fullhaus/issues
 
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/NguyenN95/Fullhaus.svg?style=for-the-badge
 [license-url]: https://github.com/NguyenN95/Fullhaus/blob/master/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/nguyenn95/
 
 [Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/downloads/
+
+[Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
