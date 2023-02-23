@@ -97,7 +97,7 @@ Build a classification model classify (an) image(s) into 3 categories (Bed, Sofa
 
 ### Prerequisites
 
-Download [python 3.10 or greater][Python-url]
+Download [python 3.10 or greater](https://www.python.org/)
 
 Download [Docker][Docker-url] (**Optional**)
 
