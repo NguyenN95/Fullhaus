@@ -84,8 +84,9 @@ Build a classification model classify (an) image(s) into 3 categories (Bed, Sofa
 
 ### Built With
 
-* [![Python][Python]][Python-url]
+* [![FastAPI][FastAPI]][FastAPI-url]
 * [![Docker][Docker]][Docker-url]
+* [![Tensorflow][Tensorflow]][Tensorflow-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -290,8 +291,11 @@ Project Link: [https://github.com/NguyenN95/Fullhaus](https://github.com/NguyenN
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nguyenn95/
 
-[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
-[Python-url]: https://www.python.org/downloads/
+[TensorFlow]: https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white
+[TensorFlow-url]: https://www.tensorflow.org/
 
 [Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
 [Docker-url]: https://www.docker.com/
+
+[FastAPI]: https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
+[FastAPI-url]: https://fastapi.tiangolo.com/
